@@ -1,0 +1,272 @@
+/* 
+    1- Los estilos estan definidos sigueindo el orden definido en el HTML
+    2- las tag hijas vienen precedidas de su tag padre
+*/
+
+
+/* ----------------------- Reseteo del Navegador ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ----------------------- Seccion Cabezera ---------------------- */
+header {
+    background-color: orangered;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+@media (min-width: 1080px) { /* Responsive header */
+    header {
+        padding: 30px 0;
+    }
+}
+
+header h3 {
+    letter-spacing: .1rem;
+    font-size: 50px;
+    
+}
+
+
+/* ----------------------- Seccion Principal de la App ---------------------- */
+.content-flex {
+    padding: 30px 50px;
+}
+@media (min-width: 1080px) { /* Responsive content-flex */
+    .content-flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 64px 50px;
+    }
+}
+
+.content-flex .content-banner {
+    text-align: center;
+}
+@media (min-width: 1080px) { /* Responsive content-flex content-banner */
+    .content-flex .content-banner {
+        width: 500px;
+    }
+}
+
+.content-flex .content-banner h1 {
+    color: orangered;
+    letter-spacing: 3px;
+}
+
+.content-flex .content-banner h4 {
+    margin: 16px 0;
+}
+
+.content-flex .content-banner p {
+    display: none;
+}
+@media (min-width: 1080px) {
+    .content-flex .content-banner p { /* Responsive content-flex .content-banner p */
+        display: block;
+        text-align: justify;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+}
+
+.content-flex .content-form form {
+    width: 340px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+}
+
+.content-flex .content-form form h2 {
+    text-align: center;
+    color: orangered;
+    margin-bottom: 16px;
+}
+
+.content-flex .content-form form label {
+    color: rgb(151, 148, 148);
+}
+
+.content-flex .content-form form input, select {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    margin: 8px 0 12px;
+    border: 1px solid gainsboro;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.content-flex .content-form form button {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 68, 0, 0.712);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, .2);
+    transition: all .3s ease;
+}
+.content-flex .content-form form button:hover {
+    background-color: orangered;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0, .3);
+}
+
+.content-flex .content-form form .info-show { /* Contenedor Despliegue de Error */
+    color: white;
+    font-size: 1.1rem;
+    width: 100%; 
+    padding: 10px 15px;
+    margin: 20px 0;   
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.color-total { /* Clases añadidas con JavaScript */
+    background-color: rgba(37, 109, 224, 0.801);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, .2);
+    transition: all .3s ease;
+}
+
+.color-descuento { /* Clases añadidas con JavaScript */
+    background-color: rgba(41, 202, 68, 0.801);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, .2);
+    transition: all .3s ease;
+}
+
+.color-error { /* Clases añadidas con JavaScript */
+    background-color: rgba(224, 74, 37, 0.801);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, .2);
+    transition: all .3s ease;
+}
+
+.content-flex .content-form form a {
+    display: inline-block;
+    width: 100%;
+    color: orangered;
+    text-align: center;
+}
+
+
+/* --------------------- Seccion Suit Text ------------------ */
+pre {
+    text-align: center;
+    color: orangered;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+    
+
+/* --------------------- Seccion Galeria Img ------------------ */
+main {
+    width: 400px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+@media (min-width: 720px) { /* Responsive Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 10px;
+        width: 700px;
+        padding: 70px 0;
+    }
+}
+@media (min-width: 1200px) { /* Responsive Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 260px 180px 220px;
+        width: 1100px;
+    }
+    main .one {
+        grid-column: 1/3;
+    }
+    main .two {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    main .three {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }   
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(100);
+}
+main div img:hover {
+    filter: grayscale(0);
+}
+
+
+/* --------------------- Seccion Menu Redes Sociales -------------------- */
+aside .icon-socials {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+aside .icon-socials i {   
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 50px;
+    padding: 1rem 0;
+    cursor: pointer;
+    box-shadow: .5rem 0 .5rem 0 rgba(0, 0, 0, .3);
+    transition: all .4s ease;
+}
+aside .icon-socials i:hover {
+    width: 60px;
+}
+
+aside .icon-socials .icon-f { /* ---- Clase Icons Face ---- */
+    background-color: #3b5999;
+}
+
+aside .icon-socials .icon-i { /* ---- Clase Icons Insta ---- */
+    background-color: #ff5700;
+}
+
+aside .icon-socials .icon-t { /* ---- Clase Icons Twitter ---- */
+    background-color: #55acee;
+}
+
+aside .icon-socials .icon-w { /* ---- Clase Icons Whatsapp ---- */
+    background-color: #25D366;
+}
+
+
+/* --------------------- Seccion Footer ----------------------- */
+footer {
+    background-color: orangered;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px 0;
+}

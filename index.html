@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- fx-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+
+    <header>
+        <h3>Hotel JS</h3>
+    </header>
+
+    <!----------------- Seccion  Principal de la App -------------->
+    <section class="content-flex">
+        <div class="content-banner">
+            <h1>NECESITAS HABITACION ?</h1>
+            <h4>!apartir del sexto (6) dia de alojamiento te premiamos con un super descuento CONOCELO AQUI¡</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro tempore a id eaque, 
+                que voluptas at consectetur aspernatur excepturi quas cum facilis corrupti 
+                explicabo, labore dolore voluptatum quod necessitatibus sint!<br><br>
+                Quaerat assumenda aque, nemo iste ipsum voluptates fuga esse adipisci repudiandae, tempore nobis 
+                tenetur expedita molestiae ea. Excepturi, nemo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro tempore a id eaque, 
+                que voluptas at<br><br>
+                Quaerat assumenda aque, nemo iste ipsum voluptates fuga esse adipisci repudiandae, tempore nobis 
+                tenetur expedita molestiae ea. Excepturi nemo.
+            </p>
+        </div>
+
+        <div class="content-form">
+            <form action="#">
+                <h2>Hotel App</h2>
+
+                <label for="dias">Elige los Dias a hospedarse</label>
+                <input type="number" name="dias" id="dias-hosp"><br>
+                
+                <label for="hotel">Elige una habitacion</label>
+                <select name="hotel" id="habitaciones">
+                    <option value=""></option>
+                    <option value="sencilla">Sencilla</option>
+                    <option value="vip">VIP</option>
+                    <option value="precidencial">Precidencial</option>
+                    <option value=""></option>
+                </select><br>
+
+                <button type="button" id="btn-send">Enviar</button>
+                
+                <p class="info-show" id="info-show"></p> <!-- Tag para mostrar error --->
+
+                <a href="#">Mas Informacion</a>
+            </form>
+        </div>
+    </section>
+
+    <pre>Nuestras Suits Principales</pre>
+
+    <!-- Seccion Galeria Img -->
+    <main>
+        <div class="one">
+            <img src="img/hab1.jpg" alt="img" title="Habitacion sencilla">
+        </div>
+
+        <div class="two">
+            <img src="img/hab2.jpg" alt="img" title="Habitacion VIP">
+        </div>
+
+        <div class="three">
+            <img src="img/hab3.jpg" alt="img" title="Habitacion precidencial">
+        </div>
+
+        <div class="four">
+            <img src="img/hab4.jpg" alt="img" title="Habitacion VIP">
+        </div>
+
+        <div class="five">
+            <img src="img/hab5.jpg" alt="img" title="Habitacion sencilla">
+        </div>
+
+        <div class="six">
+            <img src="img/hab6.jpg" alt="img" title="Habitacion precidencial">
+        </div>
+    </main>
+
+    <!-- Seccion Redes Sociales -->
+    <aside>
+        <div class="icon-socials">
+            <i class="fab fa-facebook-f icon-f" title="Ir a Faccebook" data-aos="fade-right" data-aos-duration="600"></i>
+            <i class="fab fa-instagram icon-i" title="Ir a Instagram" data-aos="fade-right" data-aos-duration="1200"></i>
+            <i class="fab fa-twitter icon-t" title="Ir a Twitter" data-aos="fade-right" data-aos-duration="1800"></i>
+            <i class="fab fa-whatsapp icon-w" title="Ir a Whatsapp" data-aos="fade-right" data-aos-duration="2400"></i>
+        </div>
+    </aside>
+
+    <footer>&copy; Jefferson Salazar 2020</footer>
+
+    <!-- Script fx -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
